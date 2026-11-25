@@ -1,0 +1,19 @@
+:root {
+  color-scheme: light;
+  --brand: #42b883; --secondary: #35495e; --ink: #172637; --muted: #596879;
+  --canvas: #f8fafc; --surface: #fff; --subtle: #f2f6f8; --line: #e2e8f0;
+  --accent: #17664b; --accent-bg: #e5f6ee; --action: #42b883; --action-ink: #102e23;
+  --danger: #ef4444; --warning: #f59e0b; --success: #22c55e;
+  --blue-ink: #315eaa; --blue-bg: #eaf1fc; --violet-ink: #6544a8; --violet-bg: #f0ebfa;
+  --peach-ink: #9a4c20; --peach-bg: #fff0e6;
+  --radius: 12px; --sidebar: 246px; --header: 68px;
+  font-family: Inter, Pretendard, 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+  color: var(--ink); background: var(--canvas); font-size: 100%;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --ink: #edf4f9; --muted: #a8b8c8; --canvas: #101923; --surface: #172330;
+  --subtle: #1d2c3a; --line: #2d3d4d; --accent: #9ce9c4; --accent-bg: #203d36;
+  --blue-ink: #b0cbff; --blue-bg: #24364e; --violet-ink: #d9c7ff; --violet-bg: #392f54;
+  --peach-ink: #ffc39f; --peach-bg: #4a342b;
+}

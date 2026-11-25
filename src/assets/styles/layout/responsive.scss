@@ -1,0 +1,30 @@
+@media (max-width: 1180px) {
+  :root { --sidebar: 216px; }
+  .dashboard__columns .exercise-card__time, .dashboard__columns .exercise-card__chevron { display: none; }
+}
+@media (max-width: 1020px) {
+  .app-shell { grid-template-columns: minmax(0, 1fr); }
+  .app-shell__sidebar { display: none; }
+  .app-header .app-header__menu { display: inline-grid; }
+}
+@media (max-width: 740px) {
+  :root { --header: 59px; }
+  .app-main { padding-top: 21px; }
+  .hero { grid-template-columns: minmax(0, 1fr); }
+  .hero-code { display: none; }
+  .stat-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .track-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .dashboard__columns { grid-template-columns: minmax(0, 1fr); }
+  .exercise-layout { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+  .exercise-layout__mobile { display: flex; padding-bottom: 4px; gap: 6px; }
+  .exercise-layout__lesson[data-mobile-active='false'], .exercise-layout__preview[data-mobile-active='false'] { display: none; }
+  .exercise-heading { flex-direction: column; }
+}
+@media (max-width: 420px) {
+  .app-header { gap: 6px; }
+  .app-header__search kbd, .exercise-card__time, .exercise-card__chevron { display: none; }
+  .track-card, .stat-card { padding: 12px; }
+  .track-grid, .stat-grid { gap: 9px; }
+  .catalog-filters { align-items: stretch; }
+  .pagination .button, .lesson-nav .button { white-space: normal; }
+}

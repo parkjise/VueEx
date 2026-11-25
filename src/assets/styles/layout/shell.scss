@@ -1,0 +1,38 @@
+.app-shell { display: grid; grid-template-columns: var(--sidebar) minmax(0, 1fr); min-height: 100dvh; }
+.app-shell__sidebar { position: sticky; top: 0; height: 100dvh; }
+.app-shell__content { min-width: 0; display: flex; flex-direction: column; }
+.sidebar { height: 100%; display: flex; flex-direction: column; overflow: auto; padding: 0 14px 14px; border-right: 1px solid var(--line); background: var(--surface); }
+.sidebar__brand { min-height: var(--header); padding: 0 5px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+.brand { display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; }
+.brand__mark, .category-icon { display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; border-radius: 9px; }
+.brand__mark { width: 39px; height: 39px; background: var(--action); color: var(--action-ink); }
+.brand strong { display: block; font-size: 1.28rem; font-weight: 850; letter-spacing: -.065em; line-height: 1.1; }
+.brand strong span { color: var(--accent); }
+.brand small { color: var(--muted); display: block; margin-top: 3px; font-size: .72rem; }
+.sidebar__nav { display: flex; flex-direction: column; gap: 15px; flex: 1; padding-top: 13px; }
+.sidebar__personal { order: 1; }
+.sidebar__label { font-size: .73rem; font-weight: 750; color: var(--muted); padding: 0 10px 6px; }
+.sidebar__link { display: flex; align-items: center; gap: 10px; min-height: 34px; color: var(--muted); padding: 5px 10px; margin-block: 1px; border-radius: 7px; font-size: .86rem; font-weight: 550; }
+.sidebar__link:hover, .sidebar__link.router-link-exact-active { background: var(--accent-bg); color: var(--accent); }
+.sidebar__link.router-link-exact-active { font-weight: 750; }
+.sidebar__progress { display: block; flex-shrink: 0; margin-top: 18px; padding: 11px; background: var(--subtle); border: 1px solid var(--line); border-radius: 9px; }
+.sidebar__progress span { display: flex; justify-content: space-between; gap: 4px; font-size: .78rem; }
+.sidebar__progress b { color: var(--accent); }
+.sidebar__progress progress { margin: 9px 0 5px; background: var(--line); }
+.sidebar__progress progress::-webkit-progress-bar { background: var(--line); }
+.sidebar__progress small { color: var(--muted); font-size: .72rem; }
+.app-header { min-height: var(--header); position: sticky; top: 0; z-index: 3; padding: 0 clamp(16px, 3vw, 40px); display: flex; align-items: center; gap: 13px; background: var(--surface); border-bottom: 1px solid var(--line); }
+.app-header__search { max-width: 360px; width: 100%; display: flex; gap: 11px; align-items: center; padding: 8px 10px 8px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--canvas); color: var(--muted); text-align: start; font-size: .86rem; }
+.app-header__search:hover { border-color: var(--brand); }
+.app-header__search kbd { margin-left: auto; font-family: inherit; font-size: .72rem; background: var(--surface); border: 1px solid var(--line); padding: 2px 6px; border-radius: 4px; white-space: nowrap; }
+.app-header__theme { margin-left: auto; }
+.app-header__avatar { display: inline-grid; place-items: center; border-radius: 50%; background: var(--accent-bg); color: var(--accent); width: 35px; height: 35px; font-size: .85rem; font-weight: 800; }
+.icon-button { display: inline-grid; place-items: center; flex-shrink: 0; width: 36px; height: 36px; padding: 0; border: 1px solid transparent; border-radius: 7px; background: transparent; color: var(--muted); }
+.icon-button:hover, .icon-button[aria-pressed='true'] { background: var(--accent-bg); color: var(--accent); }
+.app-header .app-header__menu { display: none; }
+.app-main { padding: 27px clamp(16px, 3vw, 40px) 46px; width: 100%; max-width: 1530px; margin-inline: auto; flex: 1; }
+.app-main:focus { outline: none; }
+.app-footer { padding: 18px clamp(16px, 3vw, 40px); color: var(--muted); background: var(--surface); border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 8px; font-size: .8rem; }
+.app-footer span:first-child { font-weight: 800; color: var(--ink); }
+.sidebar-drawer { margin: 0; padding: 0; border: 0; width: min(87vw, 290px); height: 100dvh; max-height: 100dvh; background: var(--surface); color: var(--ink); }
+.sidebar-drawer::backdrop, .modal::backdrop { background: #0f233081; }

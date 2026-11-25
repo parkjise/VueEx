@@ -1,0 +1,11 @@
+.breadcrumb { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; font-size: .84rem; color: var(--muted); margin-bottom: 13px; }
+.breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+.catalog-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--line); }
+.catalog-filters :is(input, select) { min-width: 0; background: var(--canvas); border: 1px solid var(--line); border-radius: 7px; padding: 8px; }
+.catalog-filters input { flex: 1; min-width: min(150px, 100%); }
+.catalog-filters select { appearance: none; padding-right: 26px; }
+.catalog-filters__select { display: inline-flex; align-items: center; position: relative; }
+.catalog-filters__select svg { position: absolute; right: 8px; pointer-events: none; color: var(--muted); }
+.catalog-count { margin: 14px; color: var(--muted); font-size: .84rem; }
+.pagination, .lesson-nav { display: flex; align-items: center; justify-content: space-between; padding: 14px; gap: 8px; border-top: 1px solid var(--line); }
+.pagination { justify-content: center; color: var(--muted); font-size: .85rem; }

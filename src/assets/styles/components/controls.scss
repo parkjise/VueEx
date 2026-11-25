@@ -1,0 +1,16 @@
+.preview__stage { position: relative; overflow: hidden; margin-inline: auto; }
+.preview__stage .sandbox-frame { position: absolute; inset: 0 auto auto 0; transform-origin: top left; }
+.preview .modal { width: min(96vw, 1024px); }
+.app-checkbox { display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; color: var(--muted); font-size: .84rem; }
+.app-checkbox input { accent-color: var(--accent); }
+.sidebar__lessons { margin: 1px 0 5px 17px; padding-left: 5px; border-left: 1px solid var(--line); }
+.sidebar__lessons .sidebar__link { font-size: .78rem; min-height: 29px; }
+.sidebar__link--parent { color: var(--accent); font-weight: 750; }
+.app-tooltip { position: relative; display: inline-flex; }
+.app-tooltip__label { visibility: hidden; position: absolute; inset: 100% 0 auto auto; z-index: 1; white-space: nowrap; background: var(--ink); color: var(--surface); padding: 5px 7px; border-radius: 5px; font-size: .75rem; pointer-events: none; }
+.app-tooltip:hover .app-tooltip__label, .app-tooltip:focus-within .app-tooltip__label { visibility: visible; }
+.app-toast { pointer-events: none; }
+.app-toast[data-visible='true'] { position: fixed; z-index: 4; inset: auto 18px 18px auto; padding: 10px 14px; border: 1px solid var(--line); border-radius: 8px; color: var(--ink); background: var(--surface); font-weight: 700; }
+.app-skeleton { padding: 16px; }
+.app-skeleton span:not(.sr-only) { display: block; height: 18px; margin-bottom: 10px; border-radius: 4px; background: var(--subtle); }
+.app-skeleton span:last-child { height: 110px; }
